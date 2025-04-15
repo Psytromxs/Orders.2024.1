@@ -27,6 +27,16 @@ namespace Orders.Backend.Data
                 _context.Categories.Add(new Category { Name = "Hogar" });
                 _context.Categories.Add(new Category { Name = "Cosmeticos" });
                 _context.Categories.Add(new Category { Name = "Licores" });
+                _context.Categories.Add(new Category { Name = "Apple" });
+                _context.Categories.Add(new Category { Name = "Autos" });
+                _context.Categories.Add(new Category { Name = "Calzado" });
+                _context.Categories.Add(new Category { Name = "Comida" });
+                _context.Categories.Add(new Category { Name = "Deportes" });
+                _context.Categories.Add(new Category { Name = "Ferreteria" });
+                _context.Categories.Add(new Category { Name = "Nutricion" });
+                _context.Categories.Add(new Category { Name = "Ropa" });
+                _context.Categories.Add(new Category { Name = "Gamer" });
+                _context.Categories.Add(new Category { Name = "Erotica" });
                 await _context.SaveChangesAsync();
             }
         }
@@ -35,9 +45,9 @@ namespace Orders.Backend.Data
         {
             if(!_context.Categories.Any())
             {
-                _context.Countries.Add(new Country
+                _ = _context.Countries.Add(new Country
                 {
-                    Name = "Colombia",
+                    Name = "xD",
                     States =
                     [
                         new State()
